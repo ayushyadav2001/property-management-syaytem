@@ -24,4 +24,9 @@ public class PropertyEntity {
     private Double price;
     @Column(name = "PROPERTY_ADDRESS",nullable = false)
     private String address;
+
+    @ManyToOne(fetch = FetchType.LAZY) //it will not fetch the user
+    // data while fetching the property by default it is EAGER and when we need to fetchn the user data then we use EAGER
+    @JoinColumn(name = "USER_ID" ,nullable = false)
+    private UserEntity userEntity;
 }

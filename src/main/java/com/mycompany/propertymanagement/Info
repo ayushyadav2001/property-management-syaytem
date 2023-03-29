@@ -1,0 +1,9 @@
+http://localhost:8080/v2/api-docs
+http://localhost:8080/swagger-ui/index.html
+https://www.baeldung.com/spring-boot-actuators#:~:text=Actuator%20is%20mainly%20used%20to,us%20out%20of%20the%20box.
+http://localhost:8080/actuator
+http://localhost:8080/actuator/health
+http://localhost:8080/actuator/metrics
+http://localhost:8080/actuator/env
+http://localhost:8080/actuator/beans
+http://localhost:8080/actuator/configprops

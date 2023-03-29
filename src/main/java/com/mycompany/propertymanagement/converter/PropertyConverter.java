@@ -26,6 +26,7 @@ public class PropertyConverter {
         de.setDescription(propertyEntity.getDescription());
         de.setPrice(propertyEntity.getPrice());
         de.setAddress(propertyEntity.getAddress());
+        de.setUserId(propertyEntity.getUserEntity().getId());
         return  de;
     }
 }
