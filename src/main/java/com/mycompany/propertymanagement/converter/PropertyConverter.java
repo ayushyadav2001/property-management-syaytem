@@ -18,15 +18,15 @@ public class PropertyConverter {
         return  pe;
     }
     //entityToDTO converter
-    public PropertyDTO convertEntityToDTO(PropertyEntity propertyEntity)
-    {
-        PropertyDTO de=new PropertyDTO();
-        de.setId(propertyEntity.getId());
-        de.setTitle(propertyEntity.getTitle());
-        de.setDescription(propertyEntity.getDescription());
-        de.setPrice(propertyEntity.getPrice());
-        de.setAddress(propertyEntity.getAddress());
-        de.setUserId(propertyEntity.getUserEntity().getId());
-        return  de;
+    public PropertyDTO convertEntityToDTO(PropertyEntity propertyEntity){
+
+        PropertyDTO propertyDTO =  new PropertyDTO();
+        propertyDTO.setId(propertyEntity.getId());
+        propertyDTO.setTitle(propertyEntity.getTitle());
+        propertyDTO.setAddress(propertyEntity.getAddress());
+        propertyDTO.setPrice(propertyEntity.getPrice());
+        propertyDTO.setDescription(propertyEntity.getDescription());
+
+        return propertyDTO;
     }
 }

@@ -23,7 +23,7 @@ public class PropertyController {
         return  responseEntity;
     }
     @GetMapping("/properties")
-    public ResponseEntity<List<PropertyDTO>> getAllProperties (PropertyDTO propertyDTO)
+    public ResponseEntity<List<PropertyDTO>> getAllProperties ()
     {
         List<PropertyDTO> propertyList =propertyService.getAllProperties();
         ResponseEntity<List<PropertyDTO>> responseEntity=new ResponseEntity<>(propertyList,HttpStatus.OK);
